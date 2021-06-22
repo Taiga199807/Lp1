@@ -339,7 +339,7 @@ li {
   background-color: #fe9;
   border-radius: 10px;
   width: 25%;
-  margin: 0 auto 150px;
+  margin: 60px auto;
 }
 .button:hover {
   cursor: pointer;
