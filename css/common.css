@@ -1,0 +1,372 @@
+@charset "UTF-8";
+body {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 15px;
+  line-height: 1.8;
+  letter-spacing: 1px;
+  word-break:break-all;
+  color: #333;
+}    
+a {
+  text-decoration: none;
+  color: #333;
+}
+li {
+  list-style: none;
+} 
+.header_all {
+  width: 100%;
+  background-color: white;
+}
+.inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.header_nav ul {
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+}
+.header_nav ul li {
+  display: table-cell;
+}
+.header_nav ul li a {
+  display: block;
+  margin: 25px;
+  padding: 5px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700;
+}
+.header_nav ul li a:hover {
+  color: #888;
+  border-bottom: solid 2px rgb(245, 3, 3);
+}
+.header_nav ul li a span {
+  display: block;
+  margin-top: 5px;
+  font-size: 8px;
+}
+.top_all {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  background: url("../img/ham2.png") no-repeat center;
+  background-size: cover;
+}
+.top_all::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.top_inner {
+  position: absolute;
+  text-align: center;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.top_inner h1 {
+  font-size: 60px;
+  font-weight: 500;
+  color: #ddd;
+}
+.top_inner p {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ddd;
+}
+.section {
+  padding: 150px 0;
+  border-top: solid 3px rgb(255, 190, 153);
+}
+
+.section:nth-of-type(even) {
+  background-color:rgba(255, 255, 244, 0.973)
+}
+.about_img {
+  position: relative;
+}
+.about_img::after {
+  content: "";
+  position: absolute;
+  background: url("../img/ham3.png") no-repeat center;
+  background-size: cover;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+}
+.ham3_img {
+  position: relative;
+}
+.ham3_img::after {
+  content: "";
+  position: absolute;
+  background: url("../img/cafe5.png") no-repeat center;
+  background-size: cover;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+}
+.concept_img {
+  position: relative;
+}
+.concept_img::after {
+  content: "";
+  position:absolute;
+  background: url("../img/ham4.png") no-repeat center;
+  background-size: cover;
+  top: 0;
+  right: 50%;
+  width:  50%;
+  height: 100%;
+}
+.con_img {
+  position: relative;
+}
+.con_img::after {
+  content: "";
+  position:absolute;
+  background: url("../img/map1.png") no-repeat center;
+  background-size: cover;
+  top: 0;
+  right: 50%;
+  width:  50%;
+  height: 100%;
+}
+
+.under_img {
+  position: relative;
+}
+.under_img::after {
+  content: "";
+  position:absolute;
+  background: url("../img/cafe2.png") no-repeat center;
+  background-size: cover;
+  top: 0;
+  
+  width: 100%;
+  height:100%;
+}
+.descript {
+  width: 40%;
+  height: 50%;
+}
+.descript_right {
+  margin-left: 60%;
+}
+.title {
+  display: block;
+  width: 100%;
+  margin-bottom: 50px;
+  padding-left: 20px;
+  line-height: 1.4;
+  font-size: 40px;
+  font-weight: bold;
+  color: #555;
+  border: solid 4px rgb(255, 176, 111);
+}
+.title span {
+  display: block;
+  font-size: 20px;
+}
+.txt h3 {
+  font-size: 25px;
+  color: #555;
+  margin-bottom: 30px;
+}
+.txt .intext {
+  color: red;
+}
+.txt p {
+  font-size: 20px;
+  color: #555;
+}
+.txt ul {
+  font-size: 20px;
+  font-weight: 500;
+  font-style: unset;
+}
+.txt p strong {
+  font-weight: bold;
+  color: rgb(114, 46, 46);
+  background: linear-gradient(transparent 60%, #fe9);
+}
+
+.frame {
+  display: inline-block;
+  width: 35%;
+  height: 100%;
+  background-color: #eee;
+  border-radius: 5px;
+  margin: 30px;
+  padding: 40px;
+}
+.txt h3 span {
+  display: block;
+  font-size: 20px;
+}
+.sub_title {
+  position: relative;
+  font-size: 18px;
+  color: #333;
+  padding: 10px 0;
+}
+
+.sub_title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  background-color: #333;
+  width: 40%;
+  height: 2px;
+  margin-top: -1px;
+}
+
+.sub_title span {
+  position: relative;
+  padding-right: 10px;
+}
+.photo {
+  width: 340px;
+  height: 220px;
+}
+.price {
+  font-size: 17px;
+  text-align: center;
+  color: #803333;
+  padding-top: 15px;
+}
+
+.price span {
+  margin-right: 5px;
+  font-style: italic;
+  font-size: 20px;
+}
+
+.price em {
+  font-style: italic;
+  font-size: 45px;
+}
+.frame_all { 
+  display: flex; 
+}
+
+.frame_profile {
+  display: inline-table;
+  width: 35%;
+  height: 100%;
+  background-color: #eee;
+  border-radius: 5px;
+  margin: 30px;
+  padding: 40px;
+}
+
+.profile_bg { 
+  background-color: #fff; 
+  height: 460px; 
+}
+.intro {
+  display: flex;
+}
+
+.intro_img {
+  padding-right: 40px;
+}
+.txt ul {
+  padding: 10px;
+}
+
+.txt ul li {
+  position: relative;
+  padding-left: 20px;
+  margin-top: 5px;
+}
+
+.txt ul li:before {
+  content: "●";
+  position: absolute;
+  left: 0;
+  color: #555;
+}
+.txt table th {
+  padding-right: 10px;
+  border-right: solid 3px #fe9;
+}
+
+.txt table td {
+  padding-left: 10px;
+}
+.sns {
+  background-color:rgb(255, 247, 233);
+  margin: auto;
+  height: 760px;
+  text-align: center;
+  
+}
+.sns_txt{
+  height: 300px;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 800;
+  font-family: unset;
+  width: 100%;
+}
+.intxt {
+  bottom: 40px;
+  font-size: 20px;
+}
+.sns_img  {
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+}
+.button {
+  text-align: center;
+  padding: 15px;
+  background-color: #fe9;
+  border-radius: 10px;
+  width: 25%;
+  margin: 0 auto 150px;
+}
+.button:hover {
+  cursor: pointer;
+  background-color: #ff6;
+}
+.button a {
+  font-size: 18px;
+  color: #555;
+}
+.bottom {
+  background-color: #555;
+  padding: 30px 0;
+  text-align: center;
+  color: #eee;
+}
+.footer_logo {
+  text-align: center;
+}
+.footer_logo img {
+  width: 200px;
+}
+.footer_sns {
+  text-align: center;
+}
+.footer_sns li {
+  list-style: none;
+}
+.footer_sns li a img {
+  width: 70px;
+}
